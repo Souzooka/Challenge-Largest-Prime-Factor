@@ -11,7 +11,7 @@ exports.largestPrimeFactor = function(n){
   }
 
   for (let i = 0; i < factors.length; i++) {
-    for (var j = factors[i] - 1; j > 1; j -= 1) {
+    for (var j = factors[i] / 2 - 1; j > 1; j -= 1) {
       if (factors[i] % j === 0) {
         primeFactor = false;
         break;
