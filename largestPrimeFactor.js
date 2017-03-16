@@ -4,7 +4,7 @@ exports.largestPrimeFactor = function(n){
   var primeFactor = false;
 
 
-  for (let i = 2; i < n / 2 - 1; i += 1) {
+  for (let i = 3; i < n / 2 - 1; i += 2) {
     if (n % i === 0) {
       factors.push(i);
     }
